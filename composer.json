@@ -1,0 +1,30 @@
+{
+    "name": "ovillani/wn-userpermissions-plugin",
+    "type": "winter-plugin",
+    "description": "Add self-defined frontend user permissions for WinterCMS",
+    "homepage": "https://github.com/OVillani/wn-userpermissions-plugin",
+    "keywords": ["winter", "cms", "WinterCMS", "plugin", "user", "permissions"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JBonnyDev",
+            "role": "Original Author"
+        },
+        {
+            "name": "O. Villani",
+            "role": "Maintainer"
+    ],
+    "support": {
+        "issues": "https://github.com/OVillani/wn-userpermissions-plugin/issues",
+        "source": "https://github.com/OVillani/wn-userpermissions-plugin"
+    },
+    "require": {
+        "php": ">=8.0.2",
+        "composer/installers": "~1.0",
+        "wintercms/winter": ">=1.2",
+        "wintercms/wn-user-plugin": "^2.0"
+    },
+    "extra": {
+        "installer-name": "userpermissions"
+    }
+}
