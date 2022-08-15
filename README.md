@@ -7,7 +7,7 @@ This plugin is a port of the original userpermissions for OC created by jbonnyde
 
 This plugin allows to set self-defined rights & permissions for WinterCMS frontend users
 and check these in the frontend views to display or not display pages, partials and
-features of a website or webapp vreated with WinterCMS.
+features of a website or webapp created with WinterCMS.
 
 ## Requirements
 
