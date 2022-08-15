@@ -1,0 +1,22 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: ovillani.userpermissions::lang.permissions.menu_label
+form: $/ovillani/userpermissions/models/permission/fields.yaml
+modelClass: OVillani\UserPermissions\Models\Permission
+
+create:
+    title: ovillani.userpermissions::lang.permissions.create_permission
+    redirect: ovillani/userpermissions/permissions/update/:id
+    redirectClose: ovillani/userpermissions/permissions
+
+update:
+    title: ovillani.userpermissions::lang.permissions.update_permission
+    redirect: ovillani/userpermissions/permissions/update/:id
+    redirectClose: ovillani/userpermissions/permissions
+
+preview:
+    title: ovillani.userpermissions::lang.permissions.view_permission
+
+defaultRedirect: ovillani/userpermissions/permissions
