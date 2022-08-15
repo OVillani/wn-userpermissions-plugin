@@ -1,4 +1,4 @@
-<?php namespace Ovillani\UserPermissions\Models;
+<?php namespace OVillani\UserPermissions\Models;
 
 use Model;
 use Winter\User\Models\User as UserModel;
