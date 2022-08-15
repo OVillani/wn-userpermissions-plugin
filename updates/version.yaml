@@ -1,0 +1,4 @@
+1.0.1:
+    - First port version from the original JBonnyDev/UserPermissions
+    - create_tables.php
+    - includes all updates and versions of the original till V 1.1.3
