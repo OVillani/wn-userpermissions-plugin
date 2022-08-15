@@ -1,4 +1,4 @@
-<?php namespace Ovillani\UserPermissions\Controllers;
+<?php namespace OVillani\UserPermissions\Controllers;
 
 use BackendMenu;
 use Winter\User\Models\User as UserModel;
