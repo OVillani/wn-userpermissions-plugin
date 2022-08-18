@@ -23,6 +23,6 @@ class Permissions extends \Backend\Classes\Controller
     {
         parent::__construct();
         BackendMenu::setContext('Winter.User', 'user', 'permissions');
-        $this->addCss('/plugins/ovillani/userpermissions/assets/css/form.css');
+        // $this->addCss('/plugins/ovillani/userpermissions/assets/css/form.css'); // not required anymore
     }
 }

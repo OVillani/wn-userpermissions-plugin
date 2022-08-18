@@ -1,28 +1,32 @@
-<?php namespace OVillani\UserPermissions\Controllers;
+<?= Form::open(['class'=>'layout']) ?>
 
-use BackendMenu;
-use Winter\User\Models\User as UserModel;
-use Winter\User\Models\UserGroup as UserGroupModel;
+    <div class="layout-row">
+        <?= $this->formRender() ?>
+    </div>
 
-class Permissions extends \Backend\Classes\Controller
-{
-    public $requiredPermissions = [
-        'ovillani.userpermissions.access_permissions'
-    ];
+    <div class="form-buttons">
+        <div class="loading-indicator-container">
+            <button
+                type="button"
+                data-request="onSave"
+                data-request-data="close:1"
+                data-hotkey="ctrl+enter, cmd+enter"
+                data-load-indicator="Saving Permission..."
+                class="btn btn-default">
+                Save and Close
+            </button>
+            <button
+                type="button"
+                class="oc-icon-trash-o btn-icon danger pull-right"
+                data-request="onDelete"
+                data-load-indicator="Deleting Permission..."
+                data-request-confirm="<?= e(trans('ovillani.userpermissions::lang.permissions.delete_confirm')) ?>">
+            </button>
+            <span class="btn-text">
+                or <a href="<?= Backend::url('ovillani/userpermissions/permissions') ?>">Cancel</a>
+            </span>
+        </div>
+    </div>
 
-    public $implement = [
-        'Backend.Behaviors.FormController',
-        'Backend.Behaviors.ListController',
-    ];
-
-    public $formConfig = 'form_config.yaml';
-
-    public $listConfig = 'list_config.yaml';
-
-    public function __construct()
-    {
-        parent::__construct();
-        BackendMenu::setContext('Winter.User', 'user', 'permissions');
-        $this->addCss('/plugins/ovillani/userpermissions/assets/css/form.css');
-    }
-}
+<?= Form::close() ?>
+ 

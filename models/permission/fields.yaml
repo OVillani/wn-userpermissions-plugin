@@ -6,32 +6,25 @@ fields:
     id:
         label: ovillani.userpermissions::lang.permission.model_id
         type: text
-        cssClass: form-id
-        description: Id of the permission
+        span: full
         disabled: true
-
-    code:
-        label: ovillani.userpermissions::lang.permission.model_code
-        type: text
-        cssClass: form-code
-        description: Code for the permission
-        comment: ovillani.userpermissions::lang.permission.model_code_comment
-        attributes:
-            maxlength: 128
-
     name:
         label: ovillani.userpermissions::lang.permission.model_name
         type: text
-        cssClass: form-name
-        description: Name of the permission
         required: true
+        span: left
         attributes:
             maxlength: 128
-
+    code:
+        label: ovillani.userpermissions::lang.permission.model_code
+        type: text
+        comment: ovillani.userpermissions::lang.permission.model_code_comment
+        span: right
+        attributes:
+            maxlength: 128
     description:
         label: ovillani.userpermissions::lang.permission.model_desc
         type: textarea
-        cssClass: form-desc
-        description: Description of the permission
+        span: full
         attributes:
             maxlength: 191
